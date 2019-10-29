@@ -7,21 +7,14 @@
  */
 package org.eclipse.xtext.testing;
 
-import org.eclipse.xtend.lib.annotations.Accessors;
-import org.eclipse.xtext.testing.TextDocumentConfiguration;
-import org.eclipse.xtext.xbase.lib.Pure;
-
-@Accessors
-@SuppressWarnings("all")
 public class FormattingConfiguration extends TextDocumentConfiguration {
-  private String expectedText = "";
-  
-  @Pure
-  public String getExpectedText() {
-    return this.expectedText;
-  }
-  
-  public void setExpectedText(final String expectedText) {
-    this.expectedText = expectedText;
-  }
+	private String expectedText = "";
+
+	public String getExpectedText() {
+		return expectedText;
+	}
+
+	public void setExpectedText(final String expectedText) {
+		this.expectedText = expectedText;
+	}
 }
